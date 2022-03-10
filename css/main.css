@@ -217,7 +217,7 @@ a:hover {
 .container .skills {
   position: relative;
   display: flex;
-  margin: 15px 0;
+  margin: 12px 0;
   padding: 20px 8px 14px;
   background: linear-gradient(#616161 0%, #333 10%, #222);
   border-radius: 8px;
