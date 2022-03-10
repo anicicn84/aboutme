@@ -158,12 +158,9 @@ a {
     }
 
     #testimonials {
-      p {
-        ul {
-          font-weight: normal;
-          margin: 0, 20px;
-        }
-      }
+      font-weight: normal;
+      margin: 0, 20px;
+      font-weight: none;
     }
   }
 
@@ -207,7 +204,8 @@ a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: $text-font;
+  //font-family: 'Poppins', sans-serif;
 }
 
 .work-history {

@@ -152,9 +152,10 @@ a:hover {
   text-decoration: underline;
   color: #333279;
 }
-#main #content #testimonials p ul {
+#main #content #testimonials {
   font-weight: normal;
   margin: 0, 20px;
+  font-weight: none;
 }
 #main #sidebar {
   float: right;
@@ -191,7 +192,7 @@ a:hover {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Alegreya Sans", Arial, sans-serif;
 }
 
 .work-history p ul {
