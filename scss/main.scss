@@ -315,3 +315,18 @@ a {
     width: 0;
   }
 }
+
+// Clearfix method
+.group:before,
+.group:after {
+  content: '';
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
