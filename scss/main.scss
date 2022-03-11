@@ -150,6 +150,7 @@ a {
       h5 {
         @extend h4;
         border: 2px solid rgb(150, 138, 138);
+        padding: 2px 4px;
 
         a {
           @include link-styles;

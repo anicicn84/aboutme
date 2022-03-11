@@ -145,6 +145,7 @@ a:hover {
 }
 #main #content #introduction h5 {
   border: 2px solid #968a8a;
+  padding: 2px 4px;
 }
 #main #content #introduction h5 a {
   all: unset;
