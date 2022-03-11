@@ -3,10 +3,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Get in Touch - My Awesome Site</title>
   <meta name="description" content="Get in touch with me to work together on a project!">
 
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -15,14 +18,16 @@
 
 <body>
   <header id="header">
-    <nav id="main-menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="work_history.html">Work history</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html">Get in Touch</a></li>
-      </ul>
-    </nav>
+    <div class="desktop-header">
+      <nav id="main-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="work_history.html">Work history</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html">Get in Touch</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <div id="main" role="main" class="group">
@@ -36,14 +41,40 @@
       <h1>Get in Touch</h1>
       <p>Below are my social media links and email if you want to get in touch with me: </p>
 
-      <a href = "mailto: anicicn84@gmail.com">Send Email</a>
+      <!-- <a href = "mailto: anicicn84@gmail.com" class="email">Send me an Email</a>
       <a href="https://www.linkedin.com/in/nikola-anicic-84557964/">LinkedIn</a>
       <a href="https://github.com/anicicn84">GitHub</a>
       <a href="https://stackoverflow.com/users/3811808/anicicn">Stack Overflow</a>
       <a href="https://www.facebook.com/anicicn/">Facebook</a>
-      <a href="https://www.instagram.com/nanicic__/">Instagram</a>
-    </article>
+      <a href="https://www.instagram.com/nanicic__/">Instagram</a> -->
 
+
+      <div class="stickyicon-list">
+           
+        <a href="https://www.linkedin.com/in/nikola-anicic-84557964/" class="linkedin"> 
+        <i class="fa fa-linkedin"></i> 
+        </a> 
+
+        <a href="https://github.com/anicicn84" class="github"> 
+        <i class="fa fa-github"></i> 
+        </a> 
+
+        <a href="https://stackoverflow.com/users/3811808/anicicn" class="stack-overflow"> 
+        <i class="fa fa-stack-overflow"></i> 
+        </a> 
+        
+        <a href="https://www.instagram.com/nanicic__/" class="instagram"> 
+        <i class="fa fa-instagram"></i> 
+        </a>  
+
+        <a href="https://www.facebook.com/anicicn/" class="facebook"> 
+        <i class="fa fa-facebook"></i> 
+        </a> 
+
+      </div> 
+      <a href = "mailto: anicicn84@gmail.com" class="email">Or send me an email</a>
+
+    </article>
 
   </div>
 
@@ -51,4 +82,5 @@
     <p>&copy; 2022 | Nikola Anicic. All rights reserved</p>
   </footer>
 </body>
+<script src="script/index.js"></script>
 </html>

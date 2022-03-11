@@ -26,16 +26,23 @@ body {
   text-align: center;
   float: left;
   max-width: 30%;
+  position: relative;
 }
 .imagelogo img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 .imagelogo #logo {
   background-color: grey;
 }
 .imagelogo p {
-  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px 25px;
 }
 
 h1,
@@ -77,44 +84,77 @@ a:hover {
   font-weight: bold;
 }
 
-#header {
+.desktop-header {
   border-radius: 12px;
   border: 1px solid #fff;
   box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
   -moz-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
   -webkit-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
-  margin: 10px 0;
   height: 60px;
   background-color: #170a48;
-}
-#header #main-menu {
   margin: 10px 0;
+  box-sizing: border-box;
 }
-#header #main-menu li {
+.desktop-header #main-menu {
+  margin: 15px;
+}
+.desktop-header #main-menu li {
   display: inline;
 }
-#header #main-menu a {
+.desktop-header #main-menu a {
   color: white;
   padding: 6px 8px;
   border-bottom: 1px solid rgba(254, 254, 254, 0);
   transition: border-bottom 0.3s;
   transition-timing-function: ease-in-out;
 }
-#header #main-menu a .className {
+.desktop-header #main-menu a .className {
   border-bottom: 1px solid #fefefe;
 }
-#header #main-menu a:hover {
+.desktop-header #main-menu a:hover {
   border-bottom: 1px solid #fefefe;
 }
-#header #logo {
+.desktop-header #logo {
   margin: 50px;
   float: left;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 120%;
+  }
+
+  .sidebar {
+    max-width: 30%;
+  }
+
+  #imagelogo {
+    max-width: 25%;
+  }
+
+  #content {
+    float: none;
+    width: 58.125%;
+  }
+  #content h2 {
+    text-align: left;
+  }
+
+  .container {
+    clear: both;
+    position: fixed;
+    max-width: 600px;
+    margin-left: 100px;
+    padding-left: 100px;
+    margin-bottom: 50px;
+  }
+}
 #main {
   width: 1300px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 70px;
+  float: left;
 }
 @media only screen and (max-width: 960px) {
   #main {
@@ -122,10 +162,18 @@ a:hover {
     max-width: 1300px;
   }
 }
+@media only screen and (max-width: 480px) {
+  #main {
+    width: 975px;
+    max-width: 975px;
+    margin-right: 20px;
+  }
+}
 #main #content {
   float: left;
   margin-left: 20px;
-  width: 45%;
+  padding-left: 10px;
+  width: 35%;
   overflow: auto;
   z-index: 9;
   text-align: justify;
@@ -158,16 +206,34 @@ a:hover {
   margin: 0, 20px;
   font-weight: none;
 }
+#main #content-work {
+  float: left;
+  display: flex;
+  margin-left: 20px;
+  padding-left: 10px;
+  max-width: 45%;
+  z-index: 9;
+  text-align: justify;
+}
+#main #content-work li {
+  list-style: none;
+}
+#main #content-work .work-history p ul {
+  display: list-item;
+  list-style-position: none;
+}
 #main #sidebar {
-  float: right;
-  width: 23.25%;
-  margin-top: 50px;
+  float: left;
+  margin: 20px 0 0 20px;
+  max-width: 30%;
+  height: auto;
+  border: 2px dotted #999;
 }
 #main #sidebar li {
   list-style-type: none;
   padding: em(16px) em(20px);
   border-bottom: 1px dashed #999;
-  margin: 10px 0;
+  margin: 10px 10px;
 }
 #main #sidebar li:hover {
   background-color: #efefef;
@@ -196,11 +262,6 @@ a:hover {
   font-family: "Alegreya Sans", Arial, sans-serif;
 }
 
-.work-history p ul {
-  display: list-item;
-  list-style-position: inside;
-}
-
 .container {
   position: relative;
   max-width: 400px;
@@ -208,6 +269,7 @@ a:hover {
   font-size: 80%;
   float: left;
   margin-left: 20px;
+  margin-bottom: 50px;
 }
 .container h2 {
   color: #fff;
@@ -293,6 +355,56 @@ a:hover {
 
 .group {
   zoom: 1;
+}
+
+.stickyicon-list {
+  position: relative;
+  margin-top: 120px;
+  transform: translateY(-50%);
+}
+
+.stickyicon-list a {
+  display: block;
+  text-align: left;
+  padding: 8px;
+  transition: all 0.5s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.stickyicon-list a:hover {
+  color: #000;
+  width: 70px;
+}
+
+.facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.stack-overflow {
+  color: white;
+  background: #f48024;
+}
+
+.linkedin {
+  background: #0e76a8;
+  color: white;
+}
+
+.github {
+  color: white;
+  background: #999;
+}
+
+.instagram {
+  background: #e95950;
+  color: white;
+}
+
+.email {
+  border: 1px solid #f27731;
+  font-size: x-large;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,6 +3,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Me - Nikola Anicic</title>
   <meta name="description" content="Learn more about me and what I do.">
 
@@ -15,15 +17,16 @@
 
 <body>
   <header id="header">
-    <nav id="main-menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="work_history.html">Work history</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html">Get in Touch</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div class="desktop-header">
+      <nav id="main-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="work_history.html">Work history</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html">Get in Touch</a></li>
+        </ul>
+      </nav>
+    </div>
 
   <div id="main" role="main" class="group">
 
@@ -32,10 +35,10 @@
       <p>This is me in Rio de Janeiro.</p>
     </div>
 
-    <article id="content">
-      <h1>Work history</h1>
+    <article id="content-work" class="group">
       <section>
-        <h2>These are the companies I have worked for...</h2>
+        <h1>Work history</h1> <br>
+        <h4>These are the companies I have worked for...</h2> <br>
         <p>
           <br>
           On the right you can find the links to the companies I have worked so far. <br>
@@ -147,14 +150,12 @@
                     </ul>
                   </p>
                   <hr>
-                  <br>
-                  <br>
-                  <br>
+                  <br> <br> <br> <br> <br> <br>
         </div>
       </section>
     </article>
 
-    <aside id="sidebar">
+    <div id="sidebar">
       <ul>
         <li><a href="https://www.ncdh.ch/">NCDH</a></li>
         <li><a href="https://leica-geosystems.com/">Leica Geosystems</a></li>
@@ -162,7 +163,7 @@
         <li><a href="https://www.zuehlke.com/en">Zuehlke</a></li>
         <li><a href="https://www.endava.com/">Endava</a></li>
       </ul>
-    </aside>
+    </div>
 
   </div>
 
@@ -170,4 +171,5 @@
     <p>&copy; 2022 | Nikola Anicic. All rights reserved</p>
   </footer>
 </body>
+<script src="script/index.js"></script>
 </html>
