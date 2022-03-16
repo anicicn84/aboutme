@@ -1,4 +1,4 @@
-@import url("https: //fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans);
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web);
 a {
@@ -15,10 +15,73 @@ body {
   color: #222222;
   font-size: em(18px);
 }
-@media only screen and (max-width: 960px) {
-  body {
-    font-size: 125%;
-  }
+body .mobile-container .toggle-menu {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 10px;
+  float: right;
+  z-index: 1000;
+}
+body .mobile-container .toggle-menu i {
+  position: absolute;
+  display: block;
+  height: 2px;
+  background: #0094fc;
+  width: 30px;
+  left: 0px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+body .mobile-container .toggle-menu i:nth-child(1) {
+  top: 16px;
+}
+body .mobile-container .toggle-menu i:nth-child(2) {
+  top: 24px;
+}
+body .mobile-container .toggle-menu i:nth-child(3) {
+  top: 32px;
+}
+body .mobile-container .toggle-menu:active i:nth-child(1) {
+  top: 25px;
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+body .mobile-container .toggle-menu:active i:nth-child(2) {
+  background: transparent;
+}
+body .mobile-container .toggle-menu:active i:nth-child(3) {
+  top: 25px;
+  -webkit-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+}
+body .mobile-container .menu-drawer {
+  width: 400px;
+  background-color: #ccc;
+  height: 900px;
+  position: absolute;
+  right: -550px;
+  top: 0;
+  transition: right linear 0.3s;
+  padding: 50px;
+}
+body .mobile-container .menu-drawer .open {
+  right: 0px;
+  transition: right linear 0.3s;
+}
+body .mobile-container .menu-drawer li {
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 50px;
+  text-align: center;
+}
+body .mobile-container .menu-drawer li a {
+  text-decoration: none;
+  color: #555;
+}
+body .mobile-container .menu-drawer li a:hover {
+  color: #0094fc;
 }
 
 .imagelogo {
@@ -119,36 +182,6 @@ a:hover {
   float: left;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    font-size: 120%;
-  }
-
-  .sidebar {
-    max-width: 30%;
-  }
-
-  #imagelogo {
-    max-width: 25%;
-  }
-
-  #content {
-    float: none;
-    width: 58.125%;
-  }
-  #content h2 {
-    text-align: left;
-  }
-
-  .container {
-    clear: both;
-    position: fixed;
-    max-width: 600px;
-    margin-left: 100px;
-    padding-left: 100px;
-    margin-bottom: 50px;
-  }
-}
 #main {
   width: 1300px;
   margin-left: auto;
@@ -156,24 +189,11 @@ a:hover {
   margin-bottom: 70px;
   float: left;
 }
-@media only screen and (max-width: 960px) {
-  #main {
-    width: auto;
-    max-width: 1300px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  #main {
-    width: 975px;
-    max-width: 975px;
-    margin-right: 20px;
-  }
-}
 #main #content {
   float: left;
   margin-left: 20px;
   padding-left: 10px;
-  width: 35%;
+  max-width: 35%;
   overflow: auto;
   z-index: 9;
   text-align: justify;
@@ -205,6 +225,9 @@ a:hover {
   font-weight: normal;
   margin: 0, 20px;
   font-weight: none;
+}
+#main #content #testimonials ul li {
+  list-style-type: none;
 }
 #main #content-work {
   float: left;
@@ -405,6 +428,86 @@ a:hover {
 .email {
   border: 1px solid #f27731;
   font-size: x-large;
+}
+
+@media only screen and (min-width: 960px) {
+  body .mobile-container {
+    display: none;
+    float: none;
+  }
+  body .mobile-container .menu-drawer {
+    display: none;
+  }
+  body .mobile-container .toggle-menu {
+    display: none;
+  }
+}
+@media only screen and (max-width: 680px) {
+  #main .imagelogo {
+    width: auto;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body .mobile-container .toggle-menu {
+    display: block;
+  }
+  body .mobile-container .menu-drawer {
+    display: block;
+  }
+
+  .desktop-header {
+    display: none;
+  }
+
+  #main {
+    width: auto;
+    max-width: 100%;
+    float: none;
+  }
+  #main .imagelogo {
+    width: auto;
+    max-width: 100%;
+    float: none;
+  }
+  #main #content {
+    max-width: 100%;
+    width: auto;
+    float: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+  }
+  #main #content-work {
+    float: none;
+    max-width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+  }
+  #main #sidebar {
+    display: none;
+  }
+
+  #footer p {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 960px) {
+  #main {
+    width: auto;
+    max-width: 1300px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #main {
+    width: auto;
+    max-width: 1200px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

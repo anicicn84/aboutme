@@ -1,10 +1,10 @@
 <!doctype html>
 
 <html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width initial-scale=1">
   <title>Portfolio - My Awesome Site</title>
   <meta name="description" content="Check out my awesome portfolio of previous projects.">
 
@@ -29,6 +29,22 @@
     </div>
   </header>
 
+  <div class="mobile-container">
+    <a class="toggle-menu" href="#">
+      <i></i>
+      <i></i>
+      <i></i>
+    </a>
+    <div class="menu-drawer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work_history.html">Work history</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Get in Touch</a></li>
+      </ul>
+    </div>
+  </div>
+
   <div id="main" role="main" class="group">
 
     <div class="imagelogo">
@@ -47,14 +63,12 @@ It is fun, good to stay in a shape, and sometimes I might stumble upon the new d
       
       <section id="testimonials">
         <h2><u>Interests</u></h2>
-        <p>
-          <ul>
-            <li>As for my interests, I'd like to work in Rust more, I found it quite complicated to learn, but also quite cool and with some great features - it is not the most beloved language on the Stack Overflow polls for 4-5 years in a row by chance. People love it, but not a lot of people mastered it. </li>
-            <li>JavaScript, TypeScript, NodeJS, React, cloud, microservices, also HTMS & CSS/SASS - these are other things and areas of my great interest. The Web runs the world and a lot of things have evolved pretty quickly in the Web. Only a few years ago React and Angular didn't exist, only a few years ago jQuerry and PHP ruled the world. This is a quite fast-moving domain, frontend, and backend, everything Web related. Systems Design emerges here as a new pretty cool and interesting to me area. When millions of users want to access specific websites and resources then some distributed and scaling magic (horizontal and vertical) need to be done in order to provide the best user experience. CDNs, Load balancers, Consistent Hashing, Map-Reduce, Bloom filters, caching, DB sharding, relational vs non-relational DBs - everything of it is of great interest to me. </li>
-            <li>Blockchain and Web3, Solitidy, Ethereum and Cardano, etc. </li>
-            <li>As for the sectors - I'd like to learn more about the financial sector, crypto and crypto trading, marketing, sales, and eCommerce. These are the areas I would be thrilled to work in, if the chance occurs. </li>
-          </ul>
-        </p>
+        <ul>
+          <li>As for my interests, I'd like to work in Rust more, I found it quite complicated to learn, but also quite cool and with some great features - it is not the most beloved language on the Stack Overflow polls for 4-5 years in a row by chance. People love it, but not a lot of people mastered it. </li>
+          <li>JavaScript, TypeScript, NodeJS, React, cloud, microservices, also HTMS & CSS/SASS - these are other things and areas of my great interest. The Web runs the world and a lot of things have evolved pretty quickly in the Web. Only a few years ago React and Angular didn't exist, only a few years ago jQuerry and PHP ruled the world. This is a quite fast-moving domain, frontend, and backend, everything Web related. Systems Design emerges here as a new pretty cool and interesting to me area. When millions of users want to access specific websites and resources then some distributed and scaling magic (horizontal and vertical) need to be done in order to provide the best user experience. CDNs, Load balancers, Consistent Hashing, Map-Reduce, Bloom filters, caching, DB sharding, relational vs non-relational DBs - everything of it is of great interest to me. </li>
+          <li>Blockchain and Web3, Solitidy, Ethereum and Cardano, etc. </li>
+          <li>As for the sectors - I'd like to learn more about the financial sector, crypto and crypto trading, marketing, sales, and eCommerce. These are the areas I would be thrilled to work in, if the chance occurs. </li>
+        </ul>
       </section>
     </article>
 

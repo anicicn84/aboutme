@@ -1,10 +1,10 @@
 <!doctype html>
 
 <html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width initial-scale=1">
   <title>Nikola Anicic personal website</title>
   <meta name="description" content="On this site, I share my biography and who am I">
 
@@ -27,7 +27,24 @@
         </ul>
       </nav>
     </div>
+
   </header>
+
+  <div class="mobile-container">
+    <a class="toggle-menu" href="#">
+      <i></i>
+      <i></i>
+      <i></i>
+    </a>
+    <div class="menu-drawer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work_history.html">Work history</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Get in Touch</a></li>
+      </ul>
+    </div>
+  </div>
 
   <div id="main" role="main" class="group">
 
@@ -56,11 +73,6 @@
         <p>I have moved to Switzerland in November 2017. I have 7+ years of experience, mostly in <strong><i>C++</i></strong>, but I love working in <strong><i></i>Rust</i></strong>, <strong><i></i>JavaScript</i></strong>, <strong><i></i>TypeScript</i></strong>, <strong><i></i>React</i></strong>, <strong><i></i>NodeJS</i></strong>, <strong><i></i>Sass</i></strong>, and <strong><i></i>C#</i></strong> occasionally.</p>
         <p>This is the place where you can learn more about me, see my skills and my experience, and how to reach out.</p>
       </section>
-      <!-- <section id="promo">
-        <h2>Check Out My Work</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex omnis atque illo odio labore, debitis, qui quo? Odio similique illum eligendi distinctio repellendus quod inventore, aliquam modi, recusandae labore dignissimos aperiam expedita unde ea rem iusto magni ipsum nisi neque!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam eum quod et provident consectetur dolores, itaque quae <a href="#">dignissimos voluptatem</a>, accusamus, aut omnis ipsa quidem error magni facilis excepturi explicabo repudiandae. Velit beatae, facere magni. Odio obcaecati possimus reiciendis incidunt quo expedita quis ipsum quibusdam omnis, numquam beatae minima iure tenetur impedit totam ea esse deleniti eum? Minima maiores expedita, accusamus.</p>
-      </section> -->
     </article>
 
   </div>
@@ -69,5 +81,6 @@
     <p>&copy; 2022 | Nikola Anicic. All rights reserved</p>
   </footer>
 </body>
+
 <script src="script/index.js"></script>
 </html>

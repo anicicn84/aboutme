@@ -22,6 +22,12 @@
   }
 }
 
+@mixin huge-screens() {
+  @media only screen and (max-width: 1300px) {
+    @content;
+  }
+}
+
 @mixin google-font($font) {
   $font: unquote($font);
   @import url(https://fonts.googleapis.com/css?family=#{$font});
@@ -70,10 +76,6 @@
     font-style: italic;
     text-decoration: none;
   }
-}
-
-@function col-width($columns: 12, $page-width: 100%, $gap: 1%) {
-  @return ($page-width - $gap * ($columns - 1)) / $columns;
 }
 
 @mixin link-styles {
