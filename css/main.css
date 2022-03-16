@@ -64,10 +64,7 @@ body .mobile-container .menu-drawer {
   top: 0;
   transition: right linear 0.3s;
   padding: 50px;
-}
-body .mobile-container .menu-drawer .open {
-  right: 0px;
-  transition: right linear 0.3s;
+  z-index: 14;
 }
 body .mobile-container .menu-drawer li {
   font-family: sans-serif;
@@ -83,29 +80,10 @@ body .mobile-container .menu-drawer li a {
 body .mobile-container .menu-drawer li a:hover {
   color: #0094fc;
 }
-
-.imagelogo {
-  display: block;
-  text-align: center;
-  float: left;
-  max-width: 30%;
-  position: relative;
-}
-.imagelogo img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-.imagelogo #logo {
-  background-color: grey;
-}
-.imagelogo p {
-  position: absolute;
-  bottom: 0;
-  left: 15px;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 15px 25px;
+body .mobile-container .open {
+  right: 0px;
+  transition: right linear 0.3s;
+  z-index: 15;
 }
 
 h1,
@@ -150,9 +128,9 @@ a:hover {
 .desktop-header {
   border-radius: 12px;
   border: 1px solid #fff;
-  box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
-  -moz-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
-  -webkit-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
+  box-shadow: 2px 0px 4px #747272, 1px 1px 6px #f27731;
+  -moz-box-shadow: 2px 0px 4px #747272, 1px 1px 6px #f27731;
+  -webkit-box-shadow: 2px 0px 4px #747272, 1px 1px 6px #f27731;
   height: 60px;
   background-color: #170a48;
   margin: 10px 0;
@@ -188,6 +166,30 @@ a:hover {
   margin-right: auto;
   margin-bottom: 70px;
   float: left;
+}
+#main .imagelogo {
+  display: block;
+  text-align: center;
+  float: left;
+  max-width: 30%;
+  position: relative;
+  z-index: 8;
+}
+#main .imagelogo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+#main .imagelogo #logo {
+  background-color: grey;
+}
+#main .imagelogo p {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px 25px;
 }
 #main #content {
   float: left;
@@ -469,6 +471,8 @@ a:hover {
     width: auto;
     max-width: 100%;
     float: none;
+    margin-left: auto;
+    margin-right: auto;
   }
   #main #content {
     max-width: 100%;
