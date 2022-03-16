@@ -42,15 +42,15 @@ body .mobile-container .toggle-menu i:nth-child(2) {
 body .mobile-container .toggle-menu i:nth-child(3) {
   top: 32px;
 }
-body .mobile-container .toggle-menu:active i:nth-child(1) {
+body .mobile-container .toggle-menu.active i:nth-child(1) {
   top: 25px;
   -webkit-transform: rotateZ(45deg);
   transform: rotateZ(45deg);
 }
-body .mobile-container .toggle-menu:active i:nth-child(2) {
+body .mobile-container .toggle-menu.active i:nth-child(2) {
   background: transparent;
 }
-body .mobile-container .toggle-menu:active i:nth-child(3) {
+body .mobile-container .toggle-menu.active i:nth-child(3) {
   top: 25px;
   -webkit-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg);

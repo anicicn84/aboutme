@@ -57,17 +57,17 @@ body {
         top: 32px;
       }
 
-      &:active i:nth-child(1) {
+      &.active i:nth-child(1) {
         top: 25px;
         -webkit-transform: rotateZ(45deg);
         transform: rotateZ(45deg);
       }
 
-      &:active i:nth-child(2) {
+      &.active i:nth-child(2) {
         background: transparent;
       }
 
-      &:active i:nth-child(3) {
+      &.active i:nth-child(3) {
         top: 25px;
         -webkit-transform: rotateZ(-45deg);
         transform: rotateZ(-45deg);
