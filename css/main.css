@@ -247,22 +247,6 @@ a:hover {
   display: list-item;
   list-style-position: none;
 }
-#main #sidebar {
-  float: left;
-  margin: 20px 0 0 20px;
-  max-width: 30%;
-  height: auto;
-  border: 2px dotted #999;
-}
-#main #sidebar li {
-  list-style-type: none;
-  padding: em(16px) em(20px);
-  border-bottom: 1px dashed #999;
-  margin: 10px 10px;
-}
-#main #sidebar li:hover {
-  background-color: #efefef;
-}
 
 #footer {
   clear: both;
@@ -492,9 +476,6 @@ a:hover {
     padding-left: 5px;
     padding-right: 5px;
     box-sizing: border-box;
-  }
-  #main #sidebar {
-    display: none;
   }
 
   #footer p {
